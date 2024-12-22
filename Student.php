@@ -12,9 +12,10 @@ class Student
     'send' => 'отправляет задание на проверку',
 
   ];
+  private int $age;
+
   public string $name;
   public string $surname;
-  private int $age;
   public array $classes;
 
   public function __construct($name, $surname, $age, $classes = ['Не выбрано'])
