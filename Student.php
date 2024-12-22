@@ -5,6 +5,13 @@ declare(strict_types=1);
 
 class Student
 {
+  private const MIN_AGE = 1;
+  private const ROUTINES = [
+    'study' => 'учит новый материал',
+    'homework' => 'выполняет домашнее задание',
+    'send' => 'отправляет задание на проверку',
+
+  ];
   public string $name;
   public string $surname;
   private int $age;
@@ -35,7 +42,7 @@ class Student
 
   public function setAge(int $value): void
   {
-    if ($value < 0) {
+    if ($value < self::MIN_AGE) {
       throw new \InvalidArgumentException('Age must be positive number');
     }
     $this->age = $value;
@@ -44,5 +51,12 @@ class Student
   public function getAge(): int
   {
     return $this->age;
+  }
+
+  public function works(): void
+  {
+    foreach (self::ROUTINES as $key => $value) {
+      echo "{$this->name} {$value}." . PHP_EOL;
+    }
   }
 }
