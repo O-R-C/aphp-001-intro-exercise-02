@@ -13,4 +13,11 @@ echo PHP_EOL;
 $car = new Car(2015, 'BMW', 'x5');
 $car->printCar();
 echo $car->drive();
-echo $car->stop();
+echo Car::carStop();
+
+echo PHP_EOL;
+
+$tv = new TV('Samsung');
+$tv->printTV();
+$tv->turnOn();
+$tv->turnOff();
