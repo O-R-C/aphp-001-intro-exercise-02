@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Object\Technics\Electronics;
+
 class TV
 {
   public static function tvTurnOn(): void

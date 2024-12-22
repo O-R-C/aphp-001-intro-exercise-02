@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Object\Technics\Transport;
+
 class Car
 {
   public static function carDrive(): string

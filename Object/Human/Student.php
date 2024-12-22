@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+namespace Object\Human;
 
 class Student
 {
