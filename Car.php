@@ -51,7 +51,7 @@ class Car
 
   public function __toString(): string
   {
-    return "Car: {$this->vendor} {$this->model}, year: {$this->year}." . PHP_EOL;
+    return "Car: {$this->vendor} {$this->model}, year: {$this->year}.";
   }
 
   public function printCar(): void
